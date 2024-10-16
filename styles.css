@@ -1,0 +1,267 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Header Styles */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+.auth-buttons button {
+    background-color: #f8f9fa;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.auth-buttons .signup-btn {
+    background-color: green;
+    color: white;
+}
+
+.auth-buttons button:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Introduction Section */
+.intro-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro-slide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background: black;
+    color: white;
+}
+
+.intro-image img {
+    width: 50%;
+}
+
+.intro-text {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Education Section */
+.education-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.education-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.education-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.education-about {
+    max-width: 500px;
+    text-align: left;
+}
+
+.education-about p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.education-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-section form input,
+.education-section form button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+/* Sale Section */
+.sale-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.sale-section button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sale-section button:hover {
+    background-color: darkgreen;
+}
+
+/* Community Section */
+.community-section {
+    padding: 20px;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+}
+
+.member {
+    padding: 20px;
+    border-radius: 40px;
+    background-color: white;
+    color: green;
+    margin: 10px;
+}
+
+.member img {
+    border-radius: 50%;
+}
+
+/* Customer Feedback Section */
+.customer-feedback {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 50px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .intro-slide {
+        flex-direction: column;
+    }
+
+    .intro-image, .intro-text {
+        width: 100%;
+    }
+}
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    text-align: center;
+    background-color: #333;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Could be more or less, depending on screen size */
+    border-radius: 20px;
+}
+.modal-content input{
+    background-color: #333;
+}
+.modal-content button{
+    width: 170px;
+    margin-top: 40px;
+    padding: 9px;
+    border-radius: 20px;
+}
+.modal-content button :hover{
+    background-color: rgb(95, 66, 94);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
